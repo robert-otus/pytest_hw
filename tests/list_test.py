@@ -33,4 +33,13 @@ def test_length(first_fixture):
     assert len(first_fixture) == len(l2)
 
 
+def test_element(first_fixture):
+    l2 = ["two"]
+    l2.extend(["one", "three"])
+    assert first_fixture[1] == l2[0]
+
+
+def test_reverse(first_fixture):
+    if "three" in first_fixture:
+        print("Element exists")
 
