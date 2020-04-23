@@ -21,7 +21,19 @@ def greeting_fixture(request):
     return request.param
 
 
+@pytest.fixture
+def set_fixture():
+    s1 = {"java", "python", "c#", "ruby"}
+    return s1
 
 
+@pytest.fixture
+def dict_fixture():
+    d1 = {}
+    return d1
 
 
+@pytest.fixture
+def dict2_fixture():
+    d2 = {'brand': 'Mercedes-Benz', 'model': '300 SL', 'year': 1961}
+    return d2
